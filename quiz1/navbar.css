@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    --text-primary:#b6b6b6;
+    --text-secondary:#ececec;
+    --bg-primary:#23232e;
+    --bg-secondary:#141418;
+    --transition-speed:600ms;
+}
+
+body{
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--color-darkblue);
+    /* Put everything back */
+    z-index: -1;
+    background-image: 
+    linear-gradient(
+      115deg,
+      rgba(238, 238, 238, 0.8),
+      rgba(255, 255, 255, 0.932)
+    ),url(https://upload-os-bbs.hoyolab.com/upload/2021/12/12/1017930/16433872fa99056dda25c707a210ca76_9118437334744386525.jpg?x-oss-process=image/auto-orient,0/interlace,1/format,jpg);
+    filter: blur(4px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb{
+    background: #6649b8;
+}
+
+
+/* note!!
+rem in this case means 16px(initial font size)*5(the rem)
+this is proven useful if you want to change font sizes */
+main{
+    margin-left: 5rem;
+    padding: 4rem;
+}
+
+
+code {
+    display: flex;
+    text-align: left;
+    white-space: pre-line;
+    /* position: relative; */
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* section{
+    background-color: rgba(233, 233, 233, 0.349);
+    padding: 2rem 1rem 2rem 1rem;
+    margin:  1rem 0 1rem 0;
+    border-radius: 1%;
+   
+} */
+
+.nav-header{
+    font-weight: 900;
+    color: aliceblue;
+}
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 200ms ease;
+}
+
+.navbar-nav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.nav-item{
+    width: 100%;
+}
+/* Target last item */
+.nav-item:last-child{
+margin-top: auto;
+}
+
+/* we set a filter */
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+} 
+
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.link-text{
+    filter: opacity(1);
+    margin-left: 1rem;
+}
+
+.nav-link svg{
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;  
+}
+
+/* set it to original width so text fits */
+.navbar:hover{
+    width: 16rem;
+}
+
+.navbar:hover .link-text{
+    filter: opacity(1);
+    transition: var(--transition-speed);
+}
+
+.svg-inline{
+    color: pink;
+}
+.svg-inline{
+    color: rgb(255, 253, 139)
+}
+
+.svg-inline{
+    transition: var(--transition-speed);
+}
+
+.logo{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    padding: 0.5rem;
+    color: var(--text-primary);
+      
+}
+
+.logo-text
+{
+
+  /* position: absolute; */
+  text-decoration: none;
+  
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .nav-logo svg{
+    transform: rotate(-360deg);
+}
+
+.nav-logo:hover{
+    height: 5rem;
+}
+
+.nav-logo svg{
+    width: 3rem;
+    min-width: 3rem;
+}
+
+/* .section-title{
+    color: black;
+    margin: 15px;
+    text-align: left;
+    font-size: 1.8em;
+
+} */
+
+/* section article {
+    color: #4d4e53;
+    margin: 15px;
+    
+} */
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 6rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+  
+    .logo {
+      display: none;
+    }
+
+.nav-item{
+    padding: 4rem 0 4rem 0;
+}
+
+    .nav-item:last-child{
+        margin-top: 0%;
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+      padding: 1em;
+    }
+    /* .link-text{
+        filter: opacity(0);
+    } */
+
+    .navbar:hover{
+        width: 100%;
+    }
+
+    main {
+      margin: 0;
+    }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo-text
+    {
+      left: 0px;
+    }
+  }
