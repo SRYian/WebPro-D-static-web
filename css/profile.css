@@ -1,0 +1,84 @@
+
+.title-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.person-img{
+    border-radius: 5rem;
+    border: 0.5rem solid white;
+
+}
+
+.title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.learn-button{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--bg-primary); 
+    color: white; 
+    border: 2px solid var(--button-col);
+    border-radius: 1rem;
+}
+
+.learn-button:hover{
+    background-color: var(--button-col);
+    color: white;
+  }
+
+.contact-detail-btn{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.contact-header{
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+  
+.contact-link{
+    font-size: 1rem;
+    color: white;
+    margin-left: 1.5rem;
+}
+  
+.box-column svg{
+    width: 2rem;
+    min-width: 1rem;
+    color: white; 
+}
+    
+.contact-links{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+  
+.contact-detail-btn{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .contact-links{
+        
+        flex-direction: column;
+        
+    }
+}
+  
+  /* Large screens */
+@media only screen and (min-width: 600px) {
+    
+}

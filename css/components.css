@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+.box-style{
+    transform: skewX(-20deg);
+	background: var(--bg-primary);
+    padding: 0 2rem 0;
+}
+.box-style > h1{
+    transform: skewX(20deg);
+}
+
+.box-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-primary);
+    padding: 2rem;
+    margin: 3rem 0;
+    border-radius: 1rem;
+    
+}
+.box-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-primary);
+    padding: 2rem;
+    margin: 3rem 0;
+    border-radius: 1rem;
+  
+}
+
