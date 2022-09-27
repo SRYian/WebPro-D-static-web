@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" >
     <link rel="stylesheet" href="https://sryian.github.io/WebPro-D-static-web/css/navbar.css">
+    <link rel="stylesheet" href="https://sryian.github.io/WebPro-D-static-web/css/components.css">
+    <link rel="stylesheet" href="https://sryian.github.io/WebPro-D-static-web/css/food.css">
     <link rel="stylesheet" href="/css/navbar.css">
-
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/food.css">
+    
 </head>
 <body>
     <nav id="navbar" class="navbar"> 
@@ -23,7 +28,6 @@
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="address-card" class="svg-inline" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z"></path></svg>
                 <span class="link-text">Profile</span>
                 </a>
-                
             </li>
           
             <li class="nav-item">
@@ -57,7 +61,64 @@
        </ul> 
     </nav>
 <main>
-    <button>Food</button>
+    <section id="projects">
+        <h2 class="projects-header box-style">
+            Jakarta's local specialty
+        </h2>
+        <div class="projects-grid swiper mySwiper">
+            <div class="projects-item swiper-wrapper">
+                <a class="project-tile swiper-slide" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                    <img class="project-img" src="https://i0.wp.com/resepkoki.id/wp-content/uploads/2017/02/Resep-Gado-Gado.jpg?fit=1920%2C1840&ssl=1" alt="project">
+                    <p class="project-name">GADO GADO</p>
+                </a>
+                <a class="project-tile swiper-slide" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                    <img class="project-img" src="https://image.kabarbumn.com/3/2/5/7/3257.jpeg" alt="project">
+                    <p class="project-name">KERAK TELOR</p>
+                </a>
+                <a class="project-tile swiper-slide" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                    <img class="project-img" src="https://www.masakapahariini.com/wp-content/uploads/2018/09/cara-membuat-nasi-uduk-MAHI-1.jpg" alt="project">
+                    <p class="project-name">NASI UDUK</p>
+                </a>
+                <a class="project-tile swiper-slide" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                    <img class="project-img" src="https://fibercreme.com/wp-content/uploads/2021/08/Lontong-Sayur.jpg" alt="project">
+                    <p class="project-name">LONTONG SAYUR</p>
+                </a>
+                <a class="project-tile swiper-slide" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                    <img class="project-img" src="https://www.bango.co.id/gfx/recipes/temp_thumb-1636457740.jpg" alt="project">
+                    <p class="project-name">SEMUR JENGKOL</p>
+                </a>
+                <a class="project-tile swiper-slide" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+                    <img class="project-img" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Roti_Buaya.JPG" alt="project">
+                    <p class="project-name">ROTI BUAYA</p>
+                </a>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+<!-- custom script for scrollbar -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </main>
 </body>
 </html>

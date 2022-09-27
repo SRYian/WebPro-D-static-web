@@ -7,6 +7,7 @@
     --bg-primary:#23232e;
     --bg-secondary:#141418;
     --button-col:#5fffb7;
+    --swiper-theme-color: #4f4f66;
     --transition-speed:600ms;
 }
 
@@ -93,6 +94,7 @@ code {
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 200ms ease;
+    z-index: 100;
 }
 
 .navbar-nav{
