@@ -1,3 +1,35 @@
+li{
+    list-style: none;
+}
+
+.pl-place{
+    background-color: var(--bg-primary);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 .pl-link{
     display: flex;
+    align-items: center;
+}
+.pl-img{
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.tourism-header{
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.3ch;
+    color: white;
+    justify-content: center;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.pl-text-container{
+    color: white;
 }

@@ -1,0 +1,29 @@
+.ht-text{
+    color: white;
+
+}
+
+.pl-img{
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.projects-header{
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.3ch;
+    color: white;
+    justify-content: center;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .pl-img{
+        width: 15rem;
+        border-radius: 1rem;
+
+    }
+    
+}

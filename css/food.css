@@ -40,9 +40,15 @@
   padding: 2rem 0 2rem 0;
   width: 100%;
   margin-bottom: 0;
+  margin-top: 2rem;
   text-align: center;
   color: var(--bg-primary);
   font-size: 2rem;
+}
+
+.food-desc
+{
+  font-size: 1rem;
 }
 
 .project-img{
